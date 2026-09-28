@@ -1,0 +1,28 @@
+# apagado al pulsar#
+int PULSADOR = 2;
+int LED = 3;
+void setup() { 
+  pinMode(PULSADOR, INPUT);
+              pinMode(LED, OUTPUT); 
+             } 
+void loop(){ 
+  if (digitalRead(PULSADOR) == LOW) { 
+    digitalWrite(LED, HIGH); } 
+  else { digitalWrite(LED, LOW); } }
+
+# led encendido al pulsar#
+const int PULSADOR = 2;
+const int LED = 3;
+
+void setup() { 
+  pinMode(PULSADOR, INPUT);
+  pinMode(LED, OUTPUT); 
+} 
+
+void loop() { 
+  if (digitalRead(PULSADOR) == HIGH) { 
+    digitalWrite(LED, HIGH); 
+  } else { 
+    digitalWrite(LED, LOW); 
+  } 
+}
